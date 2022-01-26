@@ -1,0 +1,20 @@
+{
+  "name": "xmic-tools",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.49.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "vite": "^2.7.2"
+  }
+}
