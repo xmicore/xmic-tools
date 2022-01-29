@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/jenkins",
     name: "Jenkins",
-    component: () => import('./components/Jenkins.vue'),
+    component: () => import('./components/tools/Jenkins.vue'),
 
   }
 ];

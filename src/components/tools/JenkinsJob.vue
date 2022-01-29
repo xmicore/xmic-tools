@@ -20,9 +20,10 @@ defineProps({
         background-color: whitesmoke;
     }
     .red {
-        background-color: rgb(194, 85, 85);
+        background-color: red;
+        color: white;
     }
     .blue {
-        background-color: rgb(90, 170, 90);
+        background-color: var(--color-secondary);
     }
 </style>

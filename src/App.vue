@@ -2,8 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import NavBar from './components/NavBar.vue'
-import 'normalize.css'
-import './assets/variables.css'
+import './assets/style.css'
 
 defineProps({
   msg: String
@@ -12,9 +11,13 @@ defineProps({
 </script>
 
 <template>
-  <NavBar />
-  <div class="container">
-    <router-view />
+  <div class="app">
+    <div class="sidebar">
+      <NavBar />
+    </div>
+    <div class="container">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -23,11 +26,24 @@ body {
   font-family: var(--font-family-primary);
   background-color: #ccc;
 }
+
+#app {
+  height: 100%;
+}
 </style>
 
 <style scoped>
+.app {
+  display: flex;
+  height: 100%;
+}
+.sidebar {
+  width: 200px;
+  align-items: stretch;
+}
 .container {
-        padding: 0 2rem;
+  padding: 0.5rem 2rem;
+  flex-grow: 1;
 }
 </style>
 
