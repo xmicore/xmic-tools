@@ -24,7 +24,6 @@ defineProps({
 <style>
 body {
   font-family: var(--font-family-primary);
-  background-color: #ccc;
 }
 
 #app {
@@ -38,12 +37,16 @@ body {
   height: 100%;
 }
 .sidebar {
+  position: relative;
   width: 200px;
   align-items: stretch;
 }
+
 .container {
   padding: 0.5rem 2rem;
+
   flex-grow: 1;
 }
+
 </style>
 
