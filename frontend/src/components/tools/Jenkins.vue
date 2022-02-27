@@ -14,11 +14,10 @@ const filteredJobs = computed(() => filterJobs());
 
 function loadJobs() {
     const authorizationBase64 = btoa(`${username.value}:${apiToken.value}`)
-    fetch(`${hostname.value}/api/json?tree=jobs[name,color]`, {
+    fetch(`/api/greeting`, {
         method: 'get',
         headers: {
             'Accept': 'application/json',
-            'Authorization': `Basic ${authorizationBase64}`
         }
     })
     .then(errorMsg.value = '')

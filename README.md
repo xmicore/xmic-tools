@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+# XMIC-Tools
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+XMIC-Tools is a collection of tools that support my daily work as a software developer.
 
-## Recommended IDE Setup
+## Getting started
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+First, launch the frontend part based on Vue.js of our application using vite server.
+```shell script
+mvn -f frontend
+```
+Second, launch the backend part based on Spring Boot of our application using the spring-boot maven plugin.
+
+```shell script
+mvn -f frontend
+```
