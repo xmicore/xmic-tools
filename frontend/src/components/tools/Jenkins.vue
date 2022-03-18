@@ -5,19 +5,15 @@ import FilterItem from './FilterItem.vue';
 
 const jobs = ref([]);
 const errorMsg = ref('');
-const hostname = ref('');
-const username = ref('');
-const apiToken = ref('');
 const filter = ref('');
 const filterItems = ref([]);
 const filteredJobs = computed(() => filterJobs());
 
 function loadJobs() {
-    const authorizationBase64 = btoa(`${username.value}:${apiToken.value}`)
-    fetch(`/api/greeting`, {
+    fetch(`/api/jenkins/jobs`, {
         method: 'get',
         headers: {
-            'Accept': 'application/json',
+            'Accept': 'application/json'
         }
     })
     .then(errorMsg.value = '')
@@ -58,18 +54,6 @@ function removeFilterItem(index) {
     <div v-if="errorMsg" class="error">{{ errorMsg }}</div>
 
     <form>
-        <div class="field">
-            <label >Hostname: </label>
-            <input type="text" v-model="hostname">
-        </div>
-        <div class="field">
-            <label >Nutzername: </label>
-            <input type="text" v-model="username"/>
-        </div>
-        <div class="field">
-            <label >API-Token: </label>
-            <input type="password" v-model="apiToken"/>
-        </div>
         <div class="field">
             <label >Filter: </label>
             <input type="text" v-model="filter"/>

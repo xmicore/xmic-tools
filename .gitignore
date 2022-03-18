@@ -8,3 +8,4 @@ dist-ssr
 target
 
 frontend/node/
+application-dev.yml

@@ -1,0 +1,9 @@
+server:
+  port: 8070
+
+xmic:
+  tools:
+    jenkins:
+      url: # Jenkins URL e.g. http://localhost:8080
+      username: # Username for Jenkins
+      api-token: # Api-Token for Jenkins
